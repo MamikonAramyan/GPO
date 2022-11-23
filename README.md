@@ -2,3 +2,4 @@ The project was carried out as part of obtaining additional education in TUSUR a
 
 Aramyan Mamikon Aramovich / TUSUR / Tagree
 
+#Web service for evalutionnof teaching staff by students at the University of TUSUR developed within the framework of the GPO
