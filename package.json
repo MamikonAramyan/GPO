@@ -29,5 +29,8 @@
         "build": "gulp build",
         "serve": "gulp serve",
         "start": "gulp start"
+    },
+    "dependencies": {
+        "mongodb": "^4.12.1"
     }
 }
