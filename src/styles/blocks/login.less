@@ -1,5 +1,5 @@
 body {font-family:@font-Next, serif;}
-button {
+.btn-login {
     background-color: #005bae;
     color: white;
     padding: 14px 20px;
@@ -42,14 +42,28 @@ margin-right: auto;
 width: 10em;
 }
 
-button:hover {
+.btn-login:hover {
     opacity: 0.8;
 }
 
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #7c7c7c;
+    color:#ffffff;
+    background-color: #dfdfdf;
+    border:none;
+    border-radius:35px;
+    cursor: pointer;
+    width: 100%;
+	font-family:@font-Next;
+    font-size: 19px;
+
+    &:hover,
+    &:active {
+      background-color: @black;
+    }
+  
+
 }
 
 .imgcontainer {
