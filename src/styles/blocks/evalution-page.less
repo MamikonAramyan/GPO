@@ -4,6 +4,7 @@
   max-width: 1334px;
   width: 100%;
   color:@black;
+  z-index:1;
 
     h1{
         font-family:@font-NextBold;
@@ -165,6 +166,7 @@
 }
 
 p{
+    display: inline;
     max-width:451.891px;
     max-height: 44px;
     font-size:16px;
@@ -223,15 +225,15 @@ p{
 }
 
 
-p{
+/*p{
     max-width:451.891px;
     max-height: 44px;
     font-size:16px;
     margin-left: auto;
     margin-right: 9.543em;
     margin-top:-20em;
-    margin-bottom: 20em;
-}
+   margin-bottom: 20em;
+}*/
 
 .ev{
     font-family: @font-NextBold;
@@ -239,5 +241,71 @@ p{
     margin-left: auto;
     margin-right: -6.5em;
     margin-top:-16em;
-    margin-bottom: 20em;}
+    margin-bottom: 18em;
 }
+
+
+    .ev-text{
+        margin-bottom: 19.5em;
+    }
+
+ }
+
+ .feedback{
+position: relative;
+bottom:300px;
+z-index: 99;
+height: 60px;
+
+.feedback-card1{
+    margin-left:18em;
+}
+
+.feedback-card2{
+    margin-left:1em;
+}
+
+.feedback-card3{
+    margin-left:1em;
+}
+
+.feedback-card4{
+    margin-left:18em;
+    margin-top: 1em;
+}
+
+.feedback-card5{
+    margin-left:1em;
+    margin-top: 1em;
+}
+
+.feedback-card6{
+    margin-left:1em;
+    margin-top: 1em;
+}
+
+.button-look{
+align-items: center;
+position: relative;
+right:50em;
+top: 50px;
+background-color:#dddddd;
+        font-family: @font-Next;
+        border: none;
+        border-radius: 25px;
+        padding: 0.9375rem 2.5rem;
+        color: white;
+        font-size: 1rem /* 16px */;
+
+        &:hover,
+        &:active {
+          background-color: @blue-hover;
+        }
+    }
+
+
+}
+
+
+
+
