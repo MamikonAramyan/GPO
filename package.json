@@ -1,8 +1,8 @@
 {
     "name": "course-front-vz",
     "version": "1.0.5",
-    "description": "course frontend junior",
-    "author": "https://github.com/hisa-prog",
+    "description": "GPO TUSUR",
+    "author": "https://github.com/MamikonAramyan",
     "devDependencies": {
         "autoprefixer": "^10.4.2",
         "browser-sync": "^2.27.7",
@@ -33,4 +33,10 @@
     "dependencies": {
         "mongodb": "^4.12.1"
     }
+
+    {
+        "scripts": {
+          "build": "[my-framework] build --output public"
+        }
+      }
 }
