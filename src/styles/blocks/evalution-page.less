@@ -52,11 +52,228 @@
         color: white;
         font-size: 1rem /* 16px */;
 
-        &:hover,
-        &:active {
-          background-color: @blue-hover;
+        &:active,
+        &:hover{
+          background-color: @black;
         }
     
+}
+
+.evaluting{
+    z-index:3234234;
+
+    #myBtn {
+        background-color:@blue;
+        font-family: @font-Next;
+        padding: 0.9375rem 2.5rem;
+        margin-left:294px;
+        margin-top:-20px;
+        margin-bottom:60px;
+        border: none;
+        border-radius: 25px;
+      
+        color: white;
+        font-size: 1rem /* 16px */;
+
+        &:active,
+        &:hover{
+            cursor: pointer;
+          background-color: @black;
+        }
+    
+      }
+      
+      
+      .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 250px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      
+      .modal-content {
+
+        #progressPP {
+            background: rgb(207, 207, 207);
+            border-radius: 45px;
+            height: 47px;
+            width: 630px;
+            padding: 3px;
+        }
+        
+        #progressPP:after {
+            content: '';
+            display: block;
+            background:@blue;
+            width: 20%;
+            height: 100%;
+            border-radius: 45px;
+        }
+        
+        .progress-barPP {
+            position: relative;
+            top:-26px;
+            left:130px;
+
+        }
+
+        .percent{
+            font-size:45px;
+            font-family: @font-NextBold;
+            padding-left:425px;
+        }
+
+        .snoska{
+            font-size:11px;
+            font-family: @font-Next;
+            padding-left:275px;
+            position: relative;
+            top:-30px;
+          //padding-top:15px;
+        }
+
+        .plashkapp{
+            position: relative;
+            top:-18px;
+            left: 102px;
+        }
+
+        .Criteria1{
+            text-align: center;
+            font-size:16px;
+            font-family: @font-Next;
+            position: relative;
+            top:-75px;
+            left: 54px;
+        }
+
+        .slider {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 800px;
+            height: 60px;
+            padding: 30px;
+            padding-left: 40px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 15px 40px #b9b8b666;
+            }
+            .slider label {
+                width: 800px;
+            font-size: px;
+            font-weight: 400;
+            font-family: @font-NextBold;
+            padding-left: 10px;
+            color: black;
+            }
+            .slider input[type="range"] {
+                width: 800px;
+            height: 2px;
+            background: black;
+            border: none;
+            outline: none;
+            }
+
+        .button-continue{
+            background-color:@blue;
+        font-family: @font-Next;
+        padding: 0.9375rem 2.5rem;
+        border: none;
+        border-radius: 25px;
+      position: relative;
+      left:725px;
+      top:79px;
+        color: white;
+        font-size: 1rem /* 16px */;
+
+        &:active,
+        &:hover{
+            cursor: pointer;
+          background-color: @black;
+        }
+        }
+
+        .oneevaluting{
+            position: relative;
+            left:467px;
+            top:-26px;
+        }
+
+        .fiveevaluting{
+            position: relative;
+            left:799px;
+            top:-26px;
+        }
+
+          position: relative;
+          background-color: #f5f5f5;
+          margin: auto;
+          padding: 0;
+          border: 5px solid #f5f5f5;
+          border-radius: 25px;
+          width: 50%;
+          height:500px;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1),0 6px 20px 0 rgba(0,0,0,0.1);
+          -webkit-animation-name: animatetop;
+          -webkit-animation-duration: 0.4s;
+          animation-name: animatetop;
+          animation-duration: 0.4s
+
+      }
+      
+      
+      @-webkit-keyframes animatetop {
+          from {top:-300px; opacity:0} 
+          to {top:0; opacity:1}
+      }
+      
+      @keyframes animatetop {
+          from {top:-300px; opacity:0}
+          to {top:0; opacity:1}
+      }
+      
+      
+      .close {
+          color: rgb(0, 0, 0);
+          float: right;
+          padding-right: 0px;
+          font-size: 32px;
+          font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+      }
+      
+      .modal-header {
+          padding: 2px 16px;
+          border-radius: 36px;
+          color: rgb(0, 0, 0);
+      }
+      
+      .modal-body {padding: 2px 16px;
+        }
+      
+      .modal-footer {
+          padding: 2px 16px;
+          border-radius: 36px;
+          background-color: #f5f5f5;
+          color: rgb(0, 0, 0);
+      }
 }
 
 .star1{
@@ -165,7 +382,18 @@
     margin-bottom: 20em;
 }
 
-p{
+/*p{
+    display: inline;
+    max-width:451.891px;
+    max-height: 44px;
+    font-size:16px;
+    margin-left: auto;
+    margin-right: 9.543em;
+    margin-top:-20em;
+    margin-bottom: 20em;
+}*/
+
+.crit{
     display: inline;
     max-width:451.891px;
     max-height: 44px;
@@ -175,6 +403,8 @@ p{
     margin-top:-20em;
     margin-bottom: 20em;
 }
+
+
 
 #progress4 {
     background: rgb(207, 207, 207);
@@ -304,6 +534,8 @@ background-color:#dddddd;
     }
 
 
+
+    
 }
 
 

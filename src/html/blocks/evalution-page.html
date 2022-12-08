@@ -35,35 +35,105 @@
                         </svg>
 </div>
 
+
+
+
 <div class="evaluting">
-    <button class="button-evalution">Оценить преподавателя</button>
+
+    <button id="myBtn" class="button-evalution">Оценить преподавателя</button>
+
+    <div id="myModal" class="modal">
+
+ 
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <p class="percent">20%</p>
+            <div class="progress-barPP" id="progressPP"></div>
+            <p class="snoska">Ответьте на несколько вопросов, чтобы оценить преподавателя</p>
+            <svg class ="plashkapp" width="125" height="43" viewBox="0 0 125 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="125" height="43" rx="13" fill="#EBEBEB"/>
+                <text x="12" y="25" font-family=@font-Next font-size="13px" fill="black">Критерий 1 из 5</text>
+                </svg>
+
+                <p class="Criteria1"><b>Преподавание</b> - преподаватель чётко излагает свой материал.
+                    <br>Сам материал и его практическая значимость понятны.</p>
+                    <label class="oneevaluting"><b>1</b></label>
+                    <label class="fiveevaluting"><b>5</b></label>
+                    <button class="button-continue">Далее</button>
+
+<div class="slider">
+    <label for="fader">Оценка </label>
+    <input type="range" min="20" max="100" value="50" id="fader" 
+    step="20" list="volsettings">
+    <datalist id="volsettings">
+    <option>20</option>
+    <option>40</option>
+    <option>60</option>
+    <option>80</option>
+    <option>100</option>
+    </datalist>
+    </div>
+          </div>
+        </div>
+      
+      </div>
+
 </div>
 
 
+<script async>
+var modal = document.getElementById('myModal');
+
+
+    var btn = document.getElementById("myBtn");
+    
+    
+    var span = document.getElementsByClassName("close")[0];
+    
+    
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    
+    
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+
         
-<p><b>Преподавание</b> - чётко излагают свой материал. <br>Сам материал и его практическая значимость понятны</p>
+<p class="crit"><b>Преподавание</b> - чётко излагает свой материал. <br>Сам материал и его практическая значимость понятны</p>
 <div class="progress-bar1" id="progress1">
 </div>
 <p class="ev">4.0</p>
 
 
-<p><b>Студентоориентированность</b> - преподаватель <br>понимает потребности студента в изучении дисциплины и корректирует (ставит акцент) с учетом этого</p>
+<p class="crit"><b>Студентоориентированность</b> - преподаватель <br>понимает потребности студента в изучении дисциплины и корректирует (ставит акцент) с учетом этого</p>
 <div class="progress-bar2" id="progress2">
 </div>
 <p class="ev">4.6</p>
 
-<p><b>Мотивация к учебе</b> - преподаватель
+<p class="crit"><b>Мотивация к учебе</b> - преподаватель
      умеет вызвать интерес к изучаемому предмету</p>
 <div class="progress-bar3" id="progress3">
 </div>
 <p class="ev">3.0</p>
 
-<p><b>Оценивание</b> - то, как меня оценивали, было честной проверкой моих знаний и навыков; мне были понятны критерии оценки моих знаний</p>
+<p class="crit"><b>Оценивание</b> - то, как меня оценивали, было честной проверкой моих знаний и навыков; мне были понятны критерии оценки моих знаний</p>
 <div class="progress-bar4" id="progress4">
 </div>
 <p class="ev">4.4</p>
 
-<p><b>Коммуникации</b> - преподаватель относится к студентам с уважением и доброжелательностью, поддерживает эффективную обратную связь</p>
+<p class="crit"><b>Коммуникации</b> - преподаватель относится к студентам с уважением и доброжелательностью, поддерживает эффективную обратную связь</p>
 <div class="progress-bar5" id="progress5">
 </div>
 <p class="ev">4.0</p>
@@ -248,4 +318,5 @@
                             </svg>
 
                             <button class="button-look">Смотреть еще</button>
+                                  
 </div>
