@@ -1,21 +1,20 @@
 .header {
   position: fixed;
-  //font-family: @font-NextBold;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100px;
-  background-color:#fcfcfc, 0.5;
-  z-index: 1000000;
+  height: 124px;
+  background-color:#f7f7f7, 0.5;
+  z-index: 990;
 box-shadow: #000000 0.5;
 }
 
-@supports (backdrop-filter: blur(20px)) {
+@supports (backdrop-filter: blur(10px)) {
   .header {
     background-color:#ffffff;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
   }
 }
 
@@ -35,8 +34,11 @@ box-shadow: #000000 0.5;
   vertical-align: middle;
 }
 
+.svg{
+  width:20%;
+}
 nav {
-  padding-right: 92px;
+  padding-right: 96px;
 }
 
 nav a {
@@ -60,16 +62,49 @@ nav a:active {
   display: inline-block;
   padding: 0;
   margin: 0 25px;
-  font-family: @font-Next;
-  font-size: 15px;
-  font-weight: thin;
+  font-family: @font-RFDewiRegular;
+  font-size: 13px;
 }
 
-.button-white{
-background-color:#005bae;
-color: #fff;
-border-color: #fff;
+.button-header{
+font-family: @font-RFDewiBold;
+color: #1F1E1E;
 border-radius: 50px;
-font-family: @font-NextLight;
+border-color:#1F1E1E;
+border-width: 0.5px;
+background-color:#f7f7f7;
+
+display: flex;
+align-items: center;
+justify-content: center;
+height: max-content;
+padding: 0.9375rem 2.5rem;
+
+font-size: 13px;
+line-height: 1.16 /* 22px */;
+
+
+transition-property: all;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 400ms;
+
+cursor: pointer;
+
+&:hover,
+&:active {
+  background-color: @black;
+  color: #ffffff;
+  border-color:@black;
+  
+}
+}
+
+.contact-text{
+//display: block;
+font-size: 14px;
+font-family: @font-StolzlBook;
+font-weight: 300;
+padding-left: 62px;
+color:#7e7e7e
 }
 

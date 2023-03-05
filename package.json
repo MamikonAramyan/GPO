@@ -1,7 +1,7 @@
 {
-    "name": "course-front-vz",
+    "name": "AMAStudioSite",
     "version": "1.0.5",
-    "description": "GPO TUSUR",
+    "description": "AMA",
     "author": "https://github.com/MamikonAramyan",
     "devDependencies": {
         "autoprefixer": "^10.4.2",

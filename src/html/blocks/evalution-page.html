@@ -37,15 +37,12 @@
 
 
 
-
 <div class="evaluting">
-
     <button id="myBtn" class="button-evalution">Оценить преподавателя</button>
 
     <div id="myModal" class="modal">
-
- 
-        <div class="modal-content">
+<!--
+        <div class="modal-content" id="slides__1">
           <div class="modal-header">
             <span class="close">&times;</span>
             <p class="percent">20%</p>
@@ -60,9 +57,9 @@
                     <br>Сам материал и его практическая значимость понятны.</p>
                     <label class="oneevaluting"><b>1</b></label>
                     <label class="fiveevaluting"><b>5</b></label>
-                    <button class="button-continue">Далее</button>
+                    <button id = "btn_continiue" class="button-continue" href="#slides__2">Далее</button>
 
-<div class="slider">
+<div class="slider"></button>
     <label for="fader">Оценка </label>
     <input type="range" min="20" max="100" value="50" id="fader" 
     step="20" list="volsettings">
@@ -76,10 +73,50 @@
     </div>
           </div>
         </div>
-      
-      </div>
+    -->
 
+        
+<div class="modal-content" id="slides__2">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <p class="percent">99%</p>
+              <div class="progress-barPP5" id="progressPP5"></div>
+              <p class="snoska">Ответьте на несколько вопросов, чтобы оценить преподавателя</p>
+              <svg class ="plashkapp" width="125" height="43" viewBox="0 0 125 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="125" height="43" rx="13" fill="#EBEBEB"/>
+                  <text x="12" y="25" font-family=@font-Next font-size="13px" fill="black">Критерий 5 из 5</text>
+                  </svg>
+  
+                  <p class="Criteria1"><b>Коммуникации</b> -  преподаватель относится к студентам
+                      <br>с уважением и доброжелательностью, поддерживает
+                    <br>эффективную обратную связь</p>
+                      <label class="oneevaluting5"><b>1</b></label>
+                      <label class="fiveevaluting5"><b>5</b></label>
+                      <button class="button-continue" href="#slides__2">Далее</button>
+  
+  <div class="slider"></button>
+      <label for="fader">Оценка </label>
+      <input type="range" min="20" max="100" value="50" id="fader" 
+      step="20" list="volsettings">
+      <datalist id="volsettings">
+      <option>20</option>
+      <option>40</option>
+      <option>60</option>
+      <option>80</option>
+      <option>100</option>
+      </datalist>
+      </div>
+            </div>
+            <input class="comment" placeholder="Напишите подробный отзыв о преподавателе..." type="text" />
+          </div>
+      </div>
 </div>
+
+
+
+
+
+
 
 
 <script async>
@@ -108,7 +145,6 @@ var modal = document.getElementById('myModal');
         }
     }
     </script>
-
 
         
 <p class="crit"><b>Преподавание</b> - чётко излагает свой материал. <br>Сам материал и его практическая значимость понятны</p>
